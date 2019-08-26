@@ -1,4 +1,4 @@
-inconst http = require('http');
+const http = require('http');
 const fs = require('fs');
 const md = require('markdown-it')();
 
@@ -12,8 +12,8 @@ function toHtml(markdown) {
             <meta charset="utf-8">
         </head>
         <body>
-        ${md.render(markdown)} 
-		</body>
+        ${md.render(markdown)}
+        </body>
         </html>`;
 }
 
